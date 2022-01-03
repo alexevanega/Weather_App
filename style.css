@@ -1,0 +1,9 @@
+body {
+    background-image: url(/images/weather.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#forecast {
+    background-color: white
+};

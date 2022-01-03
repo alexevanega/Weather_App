@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<script defer src="weather.js"></script>
+<link rel="stylesheet" href="style.css">
+<title>Get The Weather Forecast</title>
+</head>
+<body>
+    <!-- <img src="/images/weather.jpg" class="img-fluid vh-100 w-100 position-absolute" alt="bg"> -->
+    <div class="bg-light p-2 col-12 d-flex flex-column align-items-center justify-content-center position-relative">
+        <h1>Find Your Forecast</h1>
+        <form class="col-8 mb-3 position-relative d-flex justify-content-center align-items-baseline" id="search">
+            <div class="form-floating me-3 col-4">
+                <input type="text" class="form-control" id="city" placeholder="name@example.com">
+                <label for="floatingInput">City</label>
+            </div>
+            <p>and/or</p>
+            <div class="form-floating ms-3 me-3">
+                <input type="text" class="form-control" id="zipcode" placeholder="Password">
+                <label for="floatingPassword">Zip Code</label>
+            </div>
+            <div class="mt-2 d-flex justify-content-end">
+                <button type="submit" class="btn btn-secondary">Search</button>
+            </div>           
+        </form>         
+    </div>
+    <div class="position-absolute top-50 start-50 translate-middle w-50" id="forecast">
+
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
